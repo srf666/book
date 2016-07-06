@@ -64,8 +64,5 @@ class ViewController: UIViewController {
                     let result = db.execute(sql)
                     print(result)
           }
-
-
-
 }
 
