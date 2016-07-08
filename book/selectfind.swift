@@ -31,6 +31,10 @@ class selectfind: UIViewController {
           @IBAction func selectf(sender: AnyObject) {
                     sf()
           }
+          
+          @IBAction func selectf1(sender: AnyObject) {
+                    sf1()
+          }
           func sf(){
                     textf1.text=""
                     let a=textf.text!
@@ -44,6 +48,21 @@ class selectfind: UIViewController {
 
                     
           }
+          func sf1(){
+                    textf1.text=""
+                    let a=textf.text!
+                    let data = db.query("select * from user where mobile='\(a)'")
+                    for (var i=0;i<data.count;i++)
+                    {//获取最后一行数据显示
+                              let tuser = data[i]
+                              textf1.text! += "姓名：" + String(tuser["uname"]!) + " 电话：" + String(tuser["mobile"]!)  + " email：" + String(tuser["email"]!) +  " 地址：" + String(tuser["address"]!)+"\n"
+                    }
+                    
+                    
+                    
+          }
+
+          
           override func didReceiveMemoryWarning() {
                     super.didReceiveMemoryWarning()
                     // Dispose of any resources that can be recreated.

@@ -28,6 +28,10 @@ class selectdelete: UIViewController {
           @IBAction func delet(sender: AnyObject) {
                     del()
           }
+          
+          @IBAction func delet1(sender: AnyObject) {
+                    del1()
+          }
           func del(){
                     let a=text1.text!
                     let sql = "delete from user where uname='\(a)'"
@@ -35,6 +39,14 @@ class selectdelete: UIViewController {
                     print(result)
                     
           }
+          func del1(){
+                    let a=text1.text!
+                    let sql = "delete from user where mobile='\(a)'"
+                    let result = db.execute(sql)
+                    print(result)
+                    
+          }
+
           override func didReceiveMemoryWarning() {
                     super.didReceiveMemoryWarning()
                     // Dispose of any resources that can be recreated.
