@@ -146,6 +146,122 @@
             </objects>
             <point key="canvasLocation" x="587" y="392"/>
         </scene>
+        <!--Update-->
+        <scene sceneID="Pjr-yP-95k">
+            <objects>
+                <viewController id="gP9-s9-adf" customClass="update" customModule="book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s1y-nv-Oqp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VUL-Uz-6wT">
+                                <rect key="frame" x="28" y="501" width="138" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="返回上级"/>
+                                <connections>
+                                    <segue destination="obu-tO-Guu" kind="modal" id="15H-3L-14G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Teq-3W-26I">
+                                <rect key="frame" x="174" y="501" width="126" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="返回首页"/>
+                                <connections>
+                                    <segue destination="dMP-AX-jh0" kind="modal" id="RLB-Sn-iRR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要修改联系人的姓名" textAlignment="natural" minimumFontSize="17" id="KE4-Zn-24a">
+                                <rect key="frame" x="103" y="85" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要修改后联系人的电话" textAlignment="natural" minimumFontSize="17" id="8U6-3f-Gpa">
+                                <rect key="frame" x="103" y="184" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RYL-PA-JJq">
+                                <rect key="frame" x="78" y="307" width="164" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="保存修改"/>
+                                <connections>
+                                    <action selector="updatesave:" destination="gP9-s9-adf" eventType="touchUpInside" id="cOp-2M-E7f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="epw-y7-BCf">
+                                <rect key="frame" x="55" y="89" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ERk-7I-i7Z">
+                                <rect key="frame" x="55" y="188" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.84635329989696506" blue="0.65924813962255346" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="updatename" destination="KE4-Zn-24a" id="SSa-7r-bJS"/>
+                        <outlet property="updatenum" destination="8U6-3f-Gpa" id="hbC-gR-tTN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGc-uC-Z59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="-283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DZm-l2-sDC">
+            <objects>
+                <viewController id="obu-tO-Guu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y90-wO-wZI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="02t-Fl-h4D">
+                                <rect key="frame" x="55" y="84" width="211" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="通过姓名修改电话"/>
+                                <connections>
+                                    <segue destination="gP9-s9-adf" kind="modal" id="pBs-7l-cKi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mPy-QC-y24">
+                                <rect key="frame" x="46" y="218" width="229" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="通过电话修改姓名"/>
+                                <connections>
+                                    <segue destination="uKH-xU-SxY" kind="modal" id="uoy-HO-lpU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U5j-zF-sK3">
+                                <rect key="frame" x="78" y="407" width="164" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="dMP-AX-jh0" kind="modal" id="dWl-n6-7ct"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.41304045579471471" blue="0.42078185715936778" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaU-0y-bjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="-283"/>
+        </scene>
         <!--Find-->
         <scene sceneID="dfk-GY-MoH">
             <objects>
@@ -279,6 +395,79 @@
             </objects>
             <point key="canvasLocation" x="587" y="-283"/>
         </scene>
+        <!--Updatenum-->
+        <scene sceneID="UOM-gz-hlN">
+            <objects>
+                <viewController id="uKH-xU-SxY" customClass="updatenum" customModule="book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACh-9Y-lCm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="icg-K5-1EX">
+                                <rect key="frame" x="20" y="496" width="151" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="返回上级"/>
+                                <connections>
+                                    <segue destination="obu-tO-Guu" kind="modal" id="mDX-e3-Bzp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要修改联系人的电话" textAlignment="natural" minimumFontSize="17" id="xU1-xx-8Im">
+                                <rect key="frame" x="112" y="97" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要修改后联系人的姓名" textAlignment="natural" minimumFontSize="17" id="qnb-9h-nCa">
+                                <rect key="frame" x="112" y="211" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V5a-Zp-W9W">
+                                <rect key="frame" x="71" y="328" width="178" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="保存修改"/>
+                                <connections>
+                                    <action selector="updatenumsave:" destination="uKH-xU-SxY" eventType="touchUpInside" id="Joz-NC-9ql"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UNy-4i-Btq">
+                                <rect key="frame" x="63" y="101" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tw5-3R-rJX">
+                                <rect key="frame" x="63" y="215" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P1F-Gc-3Al">
+                                <rect key="frame" x="179" y="499" width="121" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="返回首页"/>
+                                <connections>
+                                    <segue destination="dMP-AX-jh0" kind="modal" id="3n4-Zw-9tD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60559399297663141" green="1" blue="0.47014501206696424" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="updatenumber" destination="xU1-xx-8Im" id="SmC-SB-r8i"/>
+                        <outlet property="updatenumname" destination="qnb-9h-nCa" id="AOx-6q-js2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEz-9Y-hOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="392"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="5Ju-jj-fj8">
             <objects>
@@ -315,7 +504,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FUb-a2-jWb">
-                                <rect key="frame" x="69" y="352" width="231" height="146"/>
+                                <rect key="frame" x="69" y="417" width="231" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="苏日甫蜜汁通讯录">
@@ -323,6 +512,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="p2v-sd-Tkd" kind="modal" id="0zj-b5-7Xo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qqV-O7-tax">
+                                <rect key="frame" x="85" y="366" width="196" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="修改联系人信息"/>
+                                <connections>
+                                    <segue destination="obu-tO-Guu" kind="modal" id="9XX-G1-C68"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -515,9 +713,10 @@
         <image name="810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg" width="1920" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="saw-re-0R2"/>
-        <segue reference="CVP-i4-39P"/>
-        <segue reference="KK9-fh-dPp"/>
         <segue reference="ate-9V-04b"/>
+        <segue reference="3n4-Zw-9tD"/>
+        <segue reference="mDX-e3-Bzp"/>
+        <segue reference="saw-re-0R2"/>
+        <segue reference="KK9-fh-dPp"/>
     </inferredMetricsTieBreakers>
 </document>

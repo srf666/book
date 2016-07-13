@@ -14,7 +14,10 @@
 		3E48A1501D2A961800D84B3A /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48A14D1D2A961800D84B3A /* SQLiteDB.swift */; };
 		3E48A1511D2A961800D84B3A /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48A14E1D2A961800D84B3A /* SQLTable.swift */; };
 		3E48A1521D2A961800D84B3A /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48A14F1D2A961800D84B3A /* String-Extras.swift */; };
+		3E946D221D362FBA00CBD268 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E946D211D362FBA00CBD268 /* icon.png */; };
 		3EBFFFDC1D361B1A00106883 /* 810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EBFFFDB1D361B1A00106883 /* 810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg */; };
+		3EBFFFDE1D36230900106883 /* update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBFFFDD1D36230900106883 /* update.swift */; };
+		3EBFFFE01D36232000106883 /* updatenum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBFFFDF1D36232000106883 /* updatenum.swift */; };
 		3EFF230A1D2A956700C2D1D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF23091D2A956700C2D1D5 /* AppDelegate.swift */; };
 		3EFF230C1D2A956700C2D1D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF230B1D2A956700C2D1D5 /* ViewController.swift */; };
 		3EFF230F1D2A956700C2D1D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFF230D1D2A956700C2D1D5 /* Main.storyboard */; };
@@ -50,7 +53,10 @@
 		3E48A14D1D2A961800D84B3A /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		3E48A14E1D2A961800D84B3A /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		3E48A14F1D2A961800D84B3A /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		3E946D211D362FBA00CBD268 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3EBFFFDB1D361B1A00106883 /* 810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg; sourceTree = "<group>"; };
+		3EBFFFDD1D36230900106883 /* update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = update.swift; sourceTree = "<group>"; };
+		3EBFFFDF1D36232000106883 /* updatenum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updatenum.swift; sourceTree = "<group>"; };
 		3EFF23061D2A956700C2D1D5 /* book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = book.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFF23091D2A956700C2D1D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EFF230B1D2A956700C2D1D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				3EFF23091D2A956700C2D1D5 /* AppDelegate.swift */,
 				3EFF230B1D2A956700C2D1D5 /* ViewController.swift */,
 				3EFF230D1D2A956700C2D1D5 /* Main.storyboard */,
+				3E946D211D362FBA00CBD268 /* icon.png */,
 				3EFF23101D2A956700C2D1D5 /* Assets.xcassets */,
 				3EFF23391D2A95AE00C2D1D5 /* Header.h */,
 				3EFF23121D2A956700C2D1D5 /* LaunchScreen.storyboard */,
@@ -141,6 +148,8 @@
 				3E2260121D2AA5A300E7AB63 /* find.swift */,
 				3E2260141D2AA79800E7AB63 /* selectdelet.swift */,
 				3E178EB11D2C90FA00B94348 /* selectfind.swift */,
+				3EBFFFDD1D36230900106883 /* update.swift */,
+				3EBFFFDF1D36232000106883 /* updatenum.swift */,
 			);
 			path = book;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 			files = (
 				3EFF23141D2A956700C2D1D5 /* LaunchScreen.storyboard in Resources */,
 				3E48A14B1D2A960600D84B3A /* data.db in Resources */,
+				3E946D221D362FBA00CBD268 /* icon.png in Resources */,
 				3EFF23111D2A956700C2D1D5 /* Assets.xcassets in Resources */,
 				3EFF230F1D2A956700C2D1D5 /* Main.storyboard in Resources */,
 				3EBFFFDC1D361B1A00106883 /* 810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg in Resources */,
@@ -297,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBFFFDE1D36230900106883 /* update.swift in Sources */,
 				3E48A1521D2A961800D84B3A /* String-Extras.swift in Sources */,
 				3E48A1501D2A961800D84B3A /* SQLiteDB.swift in Sources */,
+				3EBFFFE01D36232000106883 /* updatenum.swift in Sources */,
 				3E2260151D2AA79800E7AB63 /* selectdelet.swift in Sources */,
 				3E48A1511D2A961800D84B3A /* SQLTable.swift in Sources */,
 				3E178EB21D2C90FA00B94348 /* selectfind.swift in Sources */,

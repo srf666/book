@@ -17,7 +17,6 @@ class ViewController: UIViewController {
           @IBOutlet weak var address: UITextField!
           @IBAction func save(sender: AnyObject) {
                     saveUser()
-                    //showAlertEnter()
                     
           }
           override func viewDidLoad() {
@@ -33,13 +32,7 @@ class ViewController: UIViewController {
 
           }
           
-          func showAlertEnter() {
-                    var alert = UIAlertView(title:"警告",message:"本系统有损智商，请慎重！",delegate:self,cancelButtonTitle:"确定")
-                    alert.alertViewStyle = UIAlertViewStyle.Default
-                    alert.show()
-          }
-
-          //从SQLite加载数据
+                   //从SQLite加载数据
           func initUser() {
                     let data = db.query("select * from user")
                     if data.count > 0 {
