@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.29999872769190572" blue="0.97018804138943804" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="address" destination="XI5-jE-BlO" id="ObF-9Y-L7O"/>
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="392"/>
+            <point key="canvasLocation" x="208" y="392"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lWk-zA-Iug">
@@ -139,7 +139,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.54515001953920073" green="1" blue="0.58795551928136036" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6l-y6-OU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -173,14 +173,23 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="F5d-ub-cdd">
-                                <rect key="frame" x="60" y="134" width="240" height="363"/>
+                                <rect key="frame" x="53" y="134" width="240" height="363"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V4i-UJ-efu">
+                                <rect key="frame" x="69" y="29" width="208" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="按信息查找联系人"/>
+                                <connections>
+                                    <segue destination="A7V-t5-8RR" kind="modal" id="oea-ar-Rz3"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D3h-h4-TW4">
-                                <rect key="frame" x="67" y="505" width="68" height="30"/>
+                                <rect key="frame" x="53" y="505" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="清空"/>
@@ -189,17 +198,8 @@
                                     <segue destination="cZ5-KV-wHk" kind="modal" id="QVf-MZ-ItA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V4i-UJ-efu">
-                                <rect key="frame" x="76" y="29" width="208" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="按信息查找联系人"/>
-                                <connections>
-                                    <segue destination="A7V-t5-8RR" kind="modal" id="oea-ar-Rz3"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="text" destination="F5d-ub-cdd" id="mwp-gt-reM"/>
@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fM-42-0Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="-296"/>
+            <point key="canvasLocation" x="208" y="-283"/>
         </scene>
         <!--Selectfind-->
         <scene sceneID="MKr-CC-0O0">
@@ -263,11 +263,12 @@
                                 <rect key="frame" x="60" y="284" width="240" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="textf" destination="e2U-cI-8yb" id="A3D-6y-EKj"/>
@@ -276,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjL-Pu-bX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="-296"/>
+            <point key="canvasLocation" x="587" y="-283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Ju-jj-fj8">
@@ -313,13 +314,17 @@
                                     <segue destination="HXr-wZ-ruE" kind="modal" id="KK9-fh-dPp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苏日甫蜜汁通讯录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yg6-I5-NcW">
-                                <rect key="frame" x="68" y="338" width="232" height="122"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FUb-a2-jWb">
+                                <rect key="frame" x="69" y="352" width="231" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="苏日甫蜜汁通讯录">
+                                    <color key="titleColor" red="0.54515001949999997" green="1" blue="0.58795551930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p2v-sd-Tkd" kind="modal" id="0zj-b5-7Xo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.51959210487125373" blue="0.28337634040969917" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -327,6 +332,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0C-ka-Ri4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-167" y="392"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="neq-Vq-VbT">
+            <objects>
+                <viewController id="p2v-sd-Tkd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i7Q-Ew-9qq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg" id="koV-5c-G0W">
+                                <rect key="frame" x="-321" y="28" width="1009" height="727"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" 制作人员：苏日甫                                                          本通讯录可以实现存储、查询和删除联系人。" textAlignment="natural" id="YH5-y0-QSI">
+                                <rect key="frame" x="40" y="53" width="280" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Idq-RM-egh">
+                                <rect key="frame" x="0.0" y="525" width="112" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="dMP-AX-jh0" kind="modal" id="A5F-E6-DWO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vF7-ph-x3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="1156"/>
         </scene>
         <!--Selectdelete-->
         <scene sceneID="FkV-wQ-fg9">
@@ -346,15 +388,6 @@
                                     <segue destination="IOD-is-Gcj" kind="modal" id="iIw-q0-Od4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7eb-Nn-kLJ">
-                                <rect key="frame" x="162" y="360" width="114" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="返回"/>
-                                <connections>
-                                    <segue destination="dMP-AX-jh0" kind="modal" id="CVP-i4-39P"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XP8-Uj-Evk">
                                 <rect key="frame" x="100" y="263" width="154" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -371,8 +404,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7eb-Nn-kLJ">
+                                <rect key="frame" x="162" y="410" width="114" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="dMP-AX-jh0" kind="modal" id="CVP-i4-39P"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.9317568457607629" blue="0.32733137082701158" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="text1" destination="Jk6-pa-DXM" id="3CC-vj-6Yy"/>
@@ -420,7 +462,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33068158121586322" green="0.80047884299504313" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7u-b3-PS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -461,7 +503,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.75084715912921252" green="0.23005389126956055" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suw-w8-O6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,10 +511,13 @@
             <point key="canvasLocation" x="986" y="1156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="810a19d8bc3eb135306728d2a71ea8d3fd1f4432.jpg" width="1920" height="1200"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RZ6-IK-JWI"/>
-        <segue reference="Wsf-xr-ffG"/>
-        <segue reference="Gxq-94-0TN"/>
-        <segue reference="Lhz-o1-3RZ"/>
+        <segue reference="saw-re-0R2"/>
+        <segue reference="CVP-i4-39P"/>
+        <segue reference="KK9-fh-dPp"/>
+        <segue reference="ate-9V-04b"/>
     </inferredMetricsTieBreakers>
 </document>
